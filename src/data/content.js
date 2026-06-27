@@ -13,7 +13,7 @@ export const CONTACT = {
   linkedin: 'https://linkedin.com/in/ppg92',
   cal: 'https://cal.com/papgar92',
   web: 'https://pabloperez-infra.vercel.app/',
-  // CV de IT (en public/). Si creas la versión EN, cambia cvEN.
+
   cvES: '/CV-PPG-IT-ES.pdf',
   cvEN: '/CV-PPG-IT-ES.pdf',
 };
