@@ -124,7 +124,7 @@ export const T = {
     feedSub: 'Monitorización en vivo',
     hookLabel: '// el músculo',
     hook:
-      '8 años haciendo triaje de incidencias técnicas en servicio 24/7 bajo SLA. La herramienta cambia —de un panel de alarmas a un Active Directory— pero el método es el mismo: priorizar, diagnosticar rápido y resolver para que el usuario no note nada.',
+      'Experiencia de 8 años en operaciones técnicas de servicio continuo bajo SLA: incidencias, diagnóstico y resolución contrarreloj de sistemas de alarma y videovigilancia. Esa base —método, profesionalidad y orientación al usuario— es la que ahora aplico de lleno a la administración de sistemas.',
     sectionProjects: 'Proyectos',
     sectionProjectsSub: 'Infraestructura real, no diapositivas',
     sectionExp: 'Trayectoria',
@@ -164,7 +164,7 @@ export const T = {
     feedSub: 'Live monitoring',
     hookLabel: '// the muscle',
     hook:
-      '8 years triaging technical incidents in a 24/7 SLA-bound service. The tool changes —from an alarm panel to an Active Directory— but the method is the same: prioritise, diagnose fast and resolve so the user never notices.',
+      '+8 years of experience in round-the-clock technical operations under an SLA: handling incidents, diagnosing issues, and resolving problems against the clock for alarm and video surveillance systems. It is that foundation—methodology, professionalism, and user-centricity—that now serves as the basis for my approach to systems administration.',
     sectionProjects: 'Projects',
     sectionProjectsSub: 'Real infrastructure, not slides',
     sectionExp: 'Track record',
