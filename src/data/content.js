@@ -101,7 +101,8 @@ export const PROJECTS = [
 ];
 
 export const SKILLS = [
-  { es: 'Sistemas Microsoft', en: 'Microsoft Systems', items: ['Active Directory', 'GPOs', 'Windows Server', 'M365', 'Entra ID', 'Intune'] },
+  { es: 'Microsoft', en: 'Microsoft', items: ['Active Directory', 'GPOs', 'Windows Server', 'M365', 'Entra ID', 'Intune'] },
+  { es: 'Sistemas operativos', en: 'Operating systems', items: ['Windows Server', 'Debian', 'Ubuntu', 'SUSE'] },
   { es: 'Virtualización', en: 'Virtualization', items: ['Proxmox', 'VMware', 'LXC'] },
   { es: 'Redes / Perímetro', en: 'Networking / Perimeter', items: ['WatchGuard', 'pfSense', 'VLANs', 'Routing', 'VPN'] },
   { es: 'Monitorización', en: 'Monitoring', items: ['Nagios', 'Zabbix', 'Grafana'] },
@@ -130,7 +131,7 @@ export const T = {
     sectionExp: 'Trayectoria',
     sectionGoal: 'Hacia dónde voy',
     goalText:
-      'Mi meta es evolucionar hacia la nube y la automatización (Azure, infraestructura como código). Quiero diseñar sistemas que se mantengan solos, se recuperen solos y dejen de depender de tareas manuales — para que la infraestructura sea fiable de verdad.',
+      'Mi objetivo es especializarme en cloud, sobre todo en el ecosistema Microsoft Azure. Actualmente gestiono infraestructura on-premise y quiero dar el salto a gestionar infraestructura en cloud, automatizando lo repetitivo para dedicar el tiempo a lo que de verdad aporta.',
     sectionSkills: 'Stack técnico',
     sectionCerts: 'Formación y ruta',
     expItems: [
@@ -170,7 +171,7 @@ export const T = {
     sectionExp: 'Track record',
     sectionGoal: 'Where I am heading',
     goalText:
-      'My goal is to evolve towards cloud and automation (Azure, infrastructure as code). I want to design systems that maintain themselves, recover themselves and stop depending on manual tasks — so infrastructure becomes truly reliable.',
+      'My goal is to specialise in cloud, especially the Microsoft Azure ecosystem. Nowadays I manage on-premise infraestructure and want to make the leap to managing cloud, automating the repetitive so I can focus on what really matters.',
     sectionSkills: 'Tech stack',
     sectionCerts: 'Training & path',
     expItems: [
