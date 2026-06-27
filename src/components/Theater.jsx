@@ -23,7 +23,7 @@ const SEQ = {
       { t: '[ OK ] Backups · al día', c: 'ok', d: 300 },
     ],
     meterLabel: 'DISPONIBILIDAD', okStatus: 'OPERATIVO',
-    finalGlitch: 'TODOS LOS SISTEMAS OPERATIVOS',
+    finalGlitch: 'LISTO PARA PRODUCCIÓN',
     reveal: {
       eyebrow: '// sistema en marcha',
       body: [
@@ -31,7 +31,7 @@ const SEQ = {
         ['Detrás de cada sistema que funciona sin que nadie lo note, hay alguien que lo levanta, lo vigila y lo arregla antes de que falle.', true],
       ],
       tag: 'uptime · el trabajo invisible que sostiene una empresa',
-      closing: 'Ese soy yo. Y se me da bien que las cosas <b>simplemente funcionen</b>.',
+      closing: 'Si el administrador de sistemas hace bien su trabajo, no parece que esté haciendo nada',
       sign: '— Pablo Pérez García · Administrador de Sistemas / Soporte IT',
       cta: 'Ver el sistema ▸',
     },
@@ -52,7 +52,7 @@ const SEQ = {
       { t: '[ OK ] Backups · up to date', c: 'ok', d: 300 },
     ],
     meterLabel: 'AVAILABILITY', okStatus: 'OPERATIONAL',
-    finalGlitch: 'ALL SYSTEMS OPERATIONAL',
+    finalGlitch: 'READY FOR PRODUCTION',
     reveal: {
       eyebrow: '// system up',
       body: [
@@ -60,7 +60,7 @@ const SEQ = {
         ['Behind every system that works without anyone noticing, there is someone who brings it up, watches it and fixes it before it breaks.', true],
       ],
       tag: 'uptime · the invisible work that keeps a company running',
-      closing: 'That\u2019s me. And I\u2019m good at making things <b>just work</b>.',
+      closing: 'If a sysadmin does their job well, it seems like he is not doing anything at all',
       sign: '— Pablo Pérez García · Systems Administrator / IT Support',
       cta: 'Enter the system ▸',
     },
