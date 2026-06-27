@@ -15,7 +15,7 @@ export const CONTACT = {
   web: 'https://pabloperez-infra.vercel.app/',
 
   cvES: '/CV-PPG-IT-ES.pdf',
-  cvEN: '/CV-PPG-IT-ES.pdf',
+  cvEN: '/CV-PPG-IT-EN.pdf',
 };
 
 // Panel de estado de sistemas (equivalente al feed de alertas del SOC).
