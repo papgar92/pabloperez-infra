@@ -86,16 +86,16 @@ export const PROJECTS = [
     },
   },
   {
-    repo: 'Detector-Fuerza-bruta-SSH',
-    url: 'https://github.com/papgar92/Detector-Fuerza-bruta-SSH',
-    stack: ['Python', 'Bash', 'auth.log', 'Automatización'],
+    repo: 'Backup-Ubuntu-Server-Windows-server',
+    url: 'https://github.com/papgar92/Backup-Ubuntu-Server-Windows-server',
+    stack: ['Bash', 'CIFS/SMB', 'Cron', 'Ubuntu', 'Windows Server'],
     es: {
-      tag: 'Scripting · Automatización',
-      desc: 'Script en Python que analiza logs de autenticación y genera informes automáticos. Ejemplo de cómo automatizo tareas repetitivas de administración con scripting.',
+      tag: 'Automatización · Backups',
+      desc: 'Script Bash en producción que automatiza la copia de seguridad de Ubuntu a un Windows Server de dominio vía CIFS/SMB. Montaje automático de la unidad de red, rotación (mantiene solo la copia más reciente), credenciales protegidas (chmod 600) y ejecución diaria por cron con logs para auditoría.',
     },
     en: {
-      tag: 'Scripting · Automation',
-      desc: 'Python script that parses authentication logs and generates automatic reports. An example of how I automate repetitive admin tasks with scripting.',
+      tag: 'Automation · Backups',
+      desc: 'Production-ready Bash script that automates backups from Ubuntu to a domain Windows Server over CIFS/SMB. Automatic network-drive mounting, rotation (keeps only the latest copy), secured credentials (chmod 600) and daily cron execution with audit logs.',
     },
   },
 ];
