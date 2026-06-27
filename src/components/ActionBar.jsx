@@ -50,8 +50,8 @@ export default function ActionBar({ lang }) {
           </a>
           <a href={cv} target="_blank" rel="noopener noreferrer"
              aria-label="CV"
-             className="flex items-center justify-center rounded-lg border border-line p-2.5 text-ink-dim hover:text-ink hover:border-ink-mute transition-colors">
-            <Icon d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z M14 2v6h6 M16 13H8 M16 17H8 M10 9H8" />
+             className="flex items-center justify-center rounded-lg border border-line px-3.5 py-2.5 text-ink-dim text-[13px] font-semibold mono hover:text-ink hover:border-ink-mute transition-colors">
+            CV
           </a>
         </div>
       </div>
