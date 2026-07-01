@@ -102,7 +102,7 @@ export const PROJECTS = [
 
 export const SKILLS = [
   { es: 'Microsoft', en: 'Microsoft', items: ['Active Directory', 'GPOs', 'Windows Server', 'M365', 'Entra ID', 'Intune'] },
-  { es: 'Sistemas operativos', en: 'Operating systems', items: ['Windows Server', 'Debian', 'Ubuntu', 'SUSE'] },
+  { es: 'Sistemas operativos', en: 'Operating systems', items: ['Debian', 'Ubuntu', 'SUSE'] },
   { es: 'Virtualización', en: 'Virtualization', items: ['Proxmox', 'VMware', 'LXC'] },
   { es: 'Redes / Perímetro', en: 'Networking / Perimeter', items: ['WatchGuard', 'pfSense', 'VLANs', 'Routing', 'VPN'] },
   { es: 'Monitorización', en: 'Monitoring', items: ['Nagios', 'Zabbix', 'Grafana'] },
@@ -125,7 +125,7 @@ export const T = {
     feedSub: 'Monitorización en vivo',
     hookLabel: '// el músculo',
     hook:
-      'Experiencia de 8 años en operaciones técnicas de servicio continuo bajo SLA: incidencias, diagnóstico y resolución contrarreloj de sistemas de alarma y videovigilancia. Esa base —método, profesionalidad y orientación al usuario— es la que ahora aplico de lleno a la administración de sistemas.',
+      'Experiencia de 9 años en operaciones técnicas de servicio continuo bajo SLA: incidencias, diagnóstico y resolución contrarreloj de sistemas de alarma y videovigilancia. Esa base —método, profesionalidad y orientación al usuario— es la que ahora aplico de lleno a la administración de sistemas.',
     sectionProjects: 'Proyectos',
     sectionProjectsSub: 'Infraestructura real, no diapositivas',
     sectionExp: 'Trayectoria',
@@ -139,13 +139,13 @@ export const T = {
         role: 'Técnico de Soporte IT',
         org: 'Cartronic Group',
         period: '2025 – act.',
-        desc: 'Administración de infraestructura corporativa: Active Directory (50+ usuarios), GPOs, firewall WatchGuard, virtualización (Proxmox, VMware) y monitorización (Nagios, Zabbix). Soporte N1-N2, M365/Google Workspace y entorno SAP HANA on-premise.',
+        desc: 'Administración de infraestructura corporativa: Active Directory (50+ usuarios), GPOs, firewall WatchGuard, virtualización (Proxmox, VMware) y monitorización (Nagios, Zabbix). Soporte N1-N2 sobre M365 y Google Workspace. Desarrollo y mantenimiento del entorno SAP B1/HANA: queries, procedures, integración con componentes .NET y testing de APIs con Postman.',
       },
       {
         role: 'Atención técnica 24/7 · Servicio de seguridad electrónica',
         org: 'Movistar Prosegur Alarmas',
         period: '2017 – 2025',
-        desc: 'Gestión de incidencias técnicas bajo SLA en servicio continuo. Diagnóstico remoto de infraestructura IP (cámaras, NVRs, paneles), configuración de red y coordinación con equipos de campo.',
+        desc: 'Gestión de incidencias técnicas bajo SLA en servicio continuo. Diagnóstico remoto de infraestructura IP (cámaras, NVRs, paneles), configuración de red y coordinación con equipos de campo. Rol reconocido de referente informático de turno para el equipo, con resolución diaria de incidencias de red, ofimática, AD y aplicaciones internas.',
       },
       {
         role: 'Técnico de Soporte IT (Prácticas)',
@@ -165,13 +165,13 @@ export const T = {
     feedSub: 'Live monitoring',
     hookLabel: '// the muscle',
     hook:
-      '+8 years of experience in round-the-clock technical operations under an SLA: handling incidents, diagnosing issues, and resolving problems against the clock for alarm and video surveillance systems. It is that foundation—methodology, professionalism, and user-centricity—that now serves as the basis for my approach to systems administration.',
+      '+9 years of experience in round-the-clock technical operations under SLA: handling incidents, diagnosing issues, and resolving problems against the clock for alarm and video surveillance systems. It is that foundation—methodology, professionalism, and user-centricity—that now serves as the basis for my approach to systems administration.',
     sectionProjects: 'Projects',
     sectionProjectsSub: 'Real infrastructure, not slides',
     sectionExp: 'Track record',
     sectionGoal: 'Where I am heading',
     goalText:
-      'My goal is to specialise in cloud, especially the Microsoft Azure ecosystem. Nowadays I manage on-premise infraestructure and want to make the leap to managing cloud, automating the repetitive so I can focus on what really matters.',
+      'My goal is to specialise in cloud, especially the Microsoft Azure ecosystem. Nowadays I manage on-premise infrastructure and want to make the leap to managing cloud, automating the repetitive so I can focus on what really matters.',
     sectionSkills: 'Tech stack',
     sectionCerts: 'Training & path',
     expItems: [
@@ -179,13 +179,13 @@ export const T = {
         role: 'IT Support Technician',
         org: 'Cartronic Group',
         period: '2025 – now',
-        desc: 'Corporate infrastructure administration: Active Directory (50+ users), GPOs, WatchGuard firewall, virtualization (Proxmox, VMware) and monitoring (Nagios, Zabbix). N1-N2 support, M365/Google Workspace and on-premise SAP HANA.',
+        desc: 'Corporate infrastructure administration: Active Directory (50+ users), GPOs, WatchGuard firewall, virtualization (Proxmox, VMware) and monitoring (Nagios, Zabbix). N1-N2 support on M365 and Google Workspace. Development and maintenance of the SAP B1/HANA environment: queries, procedures, integration with .NET components and API testing with Postman.',
       },
       {
         role: '24/7 technical support · Electronic security service',
         org: 'Movistar Prosegur Alarmas',
         period: '2017 – 2025',
-        desc: 'SLA-bound technical incident management in continuous service. Remote diagnosis of IP infrastructure (cameras, NVRs, panels), network configuration and coordination with field teams.',
+        desc: 'SLA-bound technical incident management in continuous service. Remote diagnosis of IP infrastructure (cameras, NVRs, panels), network configuration and coordination with field teams. Recognized role as go-to IT reference within the shift, handling daily incidents on networking, office software, AD and internal applications.',
       },
       {
         role: 'IT Support Technician (Internship)',
@@ -204,5 +204,5 @@ export const T = {
 export const STATE_LABEL = {
   up: { es: 'OPERATIVO', en: 'OPERATIONAL', color: 'ok' },
   guard: { es: 'PROTEGIENDO', en: 'GUARDING', color: 'info' },
-  watch: { es: 'MONITORIZANDO', en: 'WATCHING', color: 'warn' },
+  watch: { es: 'MONITORIZANDO', en: 'WATCHING', color: 'watching' },
 };
