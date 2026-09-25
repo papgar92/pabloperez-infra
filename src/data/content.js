@@ -11,7 +11,7 @@ export const CONTACT = {
   location: 'Madrid, España',
   github: 'https://github.com/papgar92',
   linkedin: 'https://linkedin.com/in/ppg92',
-  cal: 'https://cal.com/papgar92',
+  cal: '', // 'https://cal.com/papgar92' — desactivado: sin búsqueda activa
   web: 'https://pabloperez-infra.vercel.app/',
 
   cvES: '/CV-PPG-IT-ES.pdf',
@@ -23,24 +23,38 @@ export const CONTACT = {
 export const STATUS = [
   {
     id: 'SYS-AD', sev: 'up',
-    es: { title: 'Active Directory · 50+ usuarios', src: 'Cartronic · GPOs, DNS, DHCP', state: 'OPERATIVO',
-          detail: 'Administración de dominio Windows Server: usuarios, grupos, GPOs, DNS y DHCP. Altas/bajas, permisos y políticas centralizadas.' },
-    en: { title: 'Active Directory · 50+ users', src: 'Cartronic · GPOs, DNS, DHCP', state: 'OPERATIONAL',
-          detail: 'Windows Server domain administration: users, groups, GPOs, DNS and DHCP. Onboarding/offboarding, permissions and centralized policies.' },
+    es: { title: 'Active Directory · Entra ID', src: 'multisede · GPOs, DNS, DHCP', state: 'OPERATIVO',
+          detail: 'Dominio on-premise e identidad en la nube para una organización con tres sedes: usuarios, grupos, GPOs, DNS y DHCP, con auditoría periódica de cuentas y equipos.' },
+    en: { title: 'Active Directory · Entra ID', src: 'multi-site · GPOs, DNS, DHCP', state: 'OPERATIONAL',
+          detail: 'On-premise domain and cloud identity for a three-site organization: users, groups, GPOs, DNS and DHCP, with regular audits of accounts and computers.' },
+  },
+  {
+    id: 'SYS-M365', sev: 'up',
+    es: { title: 'Microsoft 365 · tenant', src: 'Exchange Online · Defender · Entra ID', state: 'SINCRONIZADO',
+          detail: 'Administración del tenant: correo con Exchange Online (SPF/DKIM/DMARC), seguridad con Defender, licencias y gobierno de los accesos delegados de proveedores.' },
+    en: { title: 'Microsoft 365 · tenant', src: 'Exchange Online · Defender · Entra ID', state: 'SYNCED',
+          detail: 'Tenant administration: Exchange Online mail (SPF/DKIM/DMARC), Defender security, licensing and governance of delegated partner access.' },
   },
   {
     id: 'SYS-VIRT', sev: 'up',
-    es: { title: 'Virtualización · Proxmox / VMware', src: 'hosts, VMs y contenedores', state: 'OPERATIVO',
-          detail: 'Despliegue y mantenimiento de máquinas virtuales y contenedores. Snapshots, recursos y alta disponibilidad de servicios internos.' },
-    en: { title: 'Virtualization · Proxmox / VMware', src: 'hosts, VMs & containers', state: 'OPERATIONAL',
-          detail: 'Deployment and maintenance of virtual machines and containers. Snapshots, resource allocation and high availability of internal services.' },
+    es: { title: 'Virtualización · Proxmox VE / PBS', src: 'VMs, contenedores y copias', state: 'OPERATIVO',
+          detail: 'Plataforma virtualizada con copia diaria verificada en Proxmox Backup Server y servicios migrados desde Hyper-V. Experiencia previa con VMware, Docker y LXC.' },
+    en: { title: 'Virtualization · Proxmox VE / PBS', src: 'VMs, containers & backups', state: 'OPERATIONAL',
+          detail: 'Virtualized platform with verified daily backups to Proxmox Backup Server and services migrated from Hyper-V. Previous experience with VMware, Docker and LXC.' },
   },
   {
-    id: 'SYS-FW', sev: 'guard',
-    es: { title: 'Firewall perimetral · WatchGuard', src: 'reglas, VPN, segmentación', state: 'PROTEGIENDO',
-          detail: 'Gestión de firewall perimetral: reglas, VPN y segmentación de red. Control de tráfico y acceso entre VLANs.' },
-    en: { title: 'Perimeter firewall · WatchGuard', src: 'rules, VPN, segmentation', state: 'GUARDING',
-          detail: 'Perimeter firewall management: rules, VPN and network segmentation. Traffic control and access between VLANs.' },
+    id: 'SYS-NET', sev: 'guard',
+    es: { title: 'Red · MikroTik / WireGuard', src: 'VLANs, firewall, VPN', state: 'PROTEGIENDO',
+          detail: 'Routing, VLANs, NAT y firewall en MikroTik RouterOS, y VPN WireGuard para el acceso remoto. Experiencia previa con WatchGuard, switching gestionable y anillos de fibra con RSTP.' },
+    en: { title: 'Network · MikroTik / WireGuard', src: 'VLANs, firewall, VPN', state: 'GUARDING',
+          detail: 'Routing, VLANs, NAT and firewall on MikroTik RouterOS, plus WireGuard VPN for remote access. Previous experience with WatchGuard, managed switching and RSTP fibre rings.' },
+  },
+  {
+    id: 'SYS-DOC', sev: 'up',
+    es: { title: 'Documentación como código · Git', src: 'runbooks, ADR, inventario', state: 'VERSIONADO',
+          detail: 'Toda la infraestructura documentada en Git: runbooks operativos, decisiones de arquitectura (ADR) e inventario de activos con la fiabilidad de cada dato indicada.' },
+    en: { title: 'Documentation as code · Git', src: 'runbooks, ADRs, inventory', state: 'VERSIONED',
+          detail: 'The whole infrastructure documented in Git: operational runbooks, architecture decision records (ADRs) and an asset inventory with the reliability of each data point.' },
   },
   {
     id: 'SYS-MON', sev: 'watch',
@@ -48,13 +62,6 @@ export const STATUS = [
           detail: 'Supervisión de servidores, servicios y dispositivos de red. Alertas proactivas para anticipar caídas antes de que afecten al usuario.' },
     en: { title: 'Monitoring · Nagios / Zabbix', src: 'availability & alerts', state: 'WATCHING',
           detail: 'Monitoring of servers, services and network devices. Proactive alerts to anticipate outages before they reach the user.' },
-  },
-  {
-    id: 'SYS-M365', sev: 'up',
-    es: { title: 'Microsoft 365 · Entra ID / Intune', src: 'identidad y dispositivos', state: 'SINCRONIZADO',
-          detail: 'Administración de identidades y dispositivos (Entra ID, Intune). Migración On-Premise a Azure AD y despliegue de equipos.' },
-    en: { title: 'Microsoft 365 · Entra ID / Intune', src: 'identity & devices', state: 'SYNCED',
-          detail: 'Identity and device administration (Entra ID, Intune). On-premise to Azure AD migration and endpoint deployment.' },
   },
 ];
 
@@ -101,12 +108,13 @@ export const PROJECTS = [
 ];
 
 export const SKILLS = [
-  { es: 'Microsoft', en: 'Microsoft', items: ['Active Directory', 'GPOs', 'Windows Server', 'M365', 'Entra ID', 'Intune'] },
+  { es: 'Microsoft', en: 'Microsoft', items: ['Active Directory', 'GPOs', 'Windows Server', 'M365', 'Entra ID', 'Exchange Online', 'Defender', 'Intune'] },
   { es: 'Sistemas operativos', en: 'Operating systems', items: ['Debian', 'Ubuntu', 'SUSE'] },
-  { es: 'Virtualización', en: 'Virtualization', items: ['Proxmox', 'VMware', 'LXC'] },
-  { es: 'Redes / Perímetro', en: 'Networking / Perimeter', items: ['WatchGuard', 'pfSense', 'VLANs', 'Routing', 'VPN'] },
+  { es: 'Virtualización', en: 'Virtualization', items: ['Proxmox VE', 'Proxmox Backup Server', 'VMware', 'LXC', 'Docker'] },
+  { es: 'Redes / Perímetro', en: 'Networking / Perimeter', items: ['MikroTik', 'WireGuard', 'WatchGuard', 'pfSense', 'VLANs', 'VPN'] },
+  { es: 'Almacenamiento / ERP', en: 'Storage / ERP', items: ['TrueNAS', 'SAP Business One', 'SQL Server'] },
   { es: 'Monitorización', en: 'Monitoring', items: ['Nagios', 'Zabbix', 'Grafana'] },
-  { es: 'Scripting / Automatización', en: 'Scripting / Automation', items: ['PowerShell', 'Bash', 'Python'] },
+  { es: 'Scripting / Automatización', en: 'Scripting / Automation', items: ['PowerShell', 'Bash', 'Git'] },
   { es: 'ITSM / Soporte', en: 'ITSM / Support', items: ['Helix ITSM', 'JIRA', 'Salesforce'] },
 ];
 
@@ -115,37 +123,42 @@ export const CERTS = [
   { name: 'IFCT0050 · Ciberseguridad OT', state: 'done' },
   { name: 'IFCT095PO · Python', state: 'done' },
   { name: 'FP Superior · ASIR', state: 'done' },
-  { name: 'AZ-900 · Azure Fundamentals', state: 'prog' },
 ];
 
 export const T = {
   es: {
-    role: 'Administrador de Sistemas / Soporte IT',
+    role: 'Administrador de Sistemas y Ciberseguridad',
     feedTitle: 'Estado de sistemas',
     feedSub: 'Monitorización en vivo',
     hookLabel: '// el músculo',
     hook:
-      'Experiencia de 9 años en operaciones técnicas de servicio continuo bajo SLA: incidencias, diagnóstico y resolución contrarreloj de sistemas de alarma y videovigilancia. Esa base —método, profesionalidad y orientación al usuario— es la que ahora aplico de lleno a la administración de sistemas.',
+      'Casi 9 años en operaciones técnicas de servicio continuo bajo SLA: incidencias, diagnóstico y resolución contrarreloj de sistemas de alarma y videovigilancia. Esa base —método, profesionalidad y orientación al usuario— es la que hoy aplico a la administración de sistemas en un entorno regulado.',
     sectionProjects: 'Proyectos',
     sectionProjectsSub: 'Infraestructura real, no diapositivas',
     sectionExp: 'Trayectoria',
     sectionGoal: 'Hacia dónde voy',
     goalText:
-      'Mi objetivo es especializarme en cloud, sobre todo en el ecosistema Microsoft Azure. Actualmente gestiono infraestructura on-premise y quiero dar el salto a gestionar infraestructura en cloud, automatizando lo repetitivo para dedicar el tiempo a lo que de verdad aporta.',
+      'Hoy administro una infraestructura híbrida —on-premise, Microsoft 365 y Entra ID— en un entorno regulado. Mi objetivo es seguir llevándola hacia el cloud de Microsoft, automatizar lo repetitivo y que la seguridad y la documentación formen parte del diseño, no un añadido.',
     sectionSkills: 'Stack técnico',
     sectionCerts: 'Formación y ruta',
     expItems: [
       {
-        role: 'Técnico de Soporte IT',
+        role: 'Administrador de Sistemas y Ciberseguridad',
+        org: 'Sector Defensa · empresa confidencial',
+        period: '2026 – act.',
+        desc: 'Infraestructura IT de tres sedes con CPD propio y administración del tenant de Microsoft 365: Active Directory, Entra ID, Proxmox VE/PBS, MikroTik y puesto de trabajo. Documentación completa como código, análisis de riesgos orientado al ENS y diseño del acceso auditado de terceros y de la estrategia de copias.',
+      },
+      {
+        role: 'Técnico de Soporte IT & Desarrollo SAP B1/HANA',
         org: 'Cartronic Group',
-        period: '2025 – act.',
+        period: '2025 – 2026',
         desc: 'Administración de infraestructura corporativa: Active Directory (50+ usuarios), GPOs, firewall WatchGuard, virtualización (Proxmox, VMware) y monitorización (Nagios, Zabbix). Soporte N1-N2 sobre M365 y Google Workspace. Desarrollo y mantenimiento del entorno SAP B1/HANA: queries, procedures, integración con componentes .NET y testing de APIs con Postman.',
       },
       {
         role: 'Atención técnica 24/7 · Servicio de seguridad electrónica',
         org: 'Movistar Prosegur Alarmas',
         period: '2017 – 2025',
-        desc: 'Gestión de incidencias técnicas bajo SLA en servicio continuo. Diagnóstico remoto de infraestructura IP (cámaras, NVRs, paneles), configuración de red y coordinación con equipos de campo. Rol reconocido de referente informático de turno para el equipo, con resolución diaria de incidencias de red, ofimática, AD y aplicaciones internas.',
+        desc: 'Gestión de incidencias técnicas bajo SLA en servicio continuo. Diagnóstico remoto de infraestructura IP (cámaras, NVRs, paneles), configuración de red y coordinación con equipos de campo.',
       },
       {
         role: 'Técnico de Soporte IT (Prácticas)',
@@ -160,32 +173,38 @@ export const T = {
     statusReady: 'todos los sistemas operativos',
   },
   en: {
-    role: 'Systems Administrator / IT Support',
+    role: 'Systems & Cybersecurity Administrator',
     feedTitle: 'Systems status',
     feedSub: 'Live monitoring',
     hookLabel: '// the muscle',
     hook:
-      '+9 years of experience in round-the-clock technical operations under SLA: handling incidents, diagnosing issues, and resolving problems against the clock for alarm and video surveillance systems. It is that foundation—methodology, professionalism, and user-centricity—that now serves as the basis for my approach to systems administration.',
+      'Almost 9 years in round-the-clock technical operations under SLA: handling incidents, diagnosing issues and resolving problems against the clock for alarm and video surveillance systems. That foundation—methodology, professionalism and user focus—is what I now bring to systems administration in a regulated environment.',
     sectionProjects: 'Projects',
     sectionProjectsSub: 'Real infrastructure, not slides',
     sectionExp: 'Track record',
     sectionGoal: 'Where I am heading',
     goalText:
-      'My goal is to specialise in cloud, especially the Microsoft Azure ecosystem. Nowadays I manage on-premise infrastructure and want to make the leap to managing cloud, automating the repetitive so I can focus on what really matters.',
+      'Today I run a hybrid infrastructure —on-premise, Microsoft 365 and Entra ID— in a regulated environment. My goal is to keep moving it towards the Microsoft cloud, automate the repetitive and make security and documentation part of the design, not an afterthought.',
     sectionSkills: 'Tech stack',
     sectionCerts: 'Training & path',
     expItems: [
       {
-        role: 'IT Support Technician',
+        role: 'Systems & Cybersecurity Administrator',
+        org: 'Defence sector · confidential company',
+        period: '2026 – now',
+        desc: 'IT infrastructure across three sites with their own data rooms, plus Microsoft 365 tenant administration: Active Directory, Entra ID, Proxmox VE/PBS, MikroTik and endpoints. Full documentation as code, ENS-oriented risk analysis and design of audited third-party access and the backup strategy.',
+      },
+      {
+        role: 'IT Support Technician & SAP B1/HANA Developer',
         org: 'Cartronic Group',
-        period: '2025 – now',
+        period: '2025 – 2026',
         desc: 'Corporate infrastructure administration: Active Directory (50+ users), GPOs, WatchGuard firewall, virtualization (Proxmox, VMware) and monitoring (Nagios, Zabbix). N1-N2 support on M365 and Google Workspace. Development and maintenance of the SAP B1/HANA environment: queries, procedures, integration with .NET components and API testing with Postman.',
       },
       {
         role: '24/7 technical support · Electronic security service',
         org: 'Movistar Prosegur Alarmas',
         period: '2017 – 2025',
-        desc: 'SLA-bound technical incident management in continuous service. Remote diagnosis of IP infrastructure (cameras, NVRs, panels), network configuration and coordination with field teams. Recognized role as go-to IT reference within the shift, handling daily incidents on networking, office software, AD and internal applications.',
+        desc: 'SLA-bound technical incident management in continuous service. Remote diagnosis of IP infrastructure (cameras, NVRs, panels), network configuration and coordination with field teams.',
       },
       {
         role: 'IT Support Technician (Internship)',

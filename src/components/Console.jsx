@@ -29,7 +29,7 @@ export default function Console({ lang }) {
     } else if (low === 'whoami') {
       out.push({ type: 'out', text: T[lang].role + ' — ' + CONTACT.location });
     } else if (low === 'uptime') {
-      out.push({ type: 'ok', text: lang === 'es' ? ' 8 años en operaciones técnicas · carga: estable · caídas: las mínimas' : ' 8 years in technical operations · load: stable · outages: minimal' });
+      out.push({ type: 'ok', text: lang === 'es' ? ' casi 10 años en operaciones técnicas · carga: estable · caídas: las mínimas' : ' almost 10 years in technical operations · load: stable · outages: minimal' });
     } else if (low === 'systemctl status' || low === 'systemctl') {
       STATUS.forEach((s) => out.push({ type: 'ok', text: '● ' + s[lang].title + '  —  ' + s[lang].state }));
     } else if (low === 'ls' || low === 'ls projects/' || low === 'ls projects') {
@@ -38,8 +38,8 @@ export default function Console({ lang }) {
       SKILLS.forEach((s) => out.push({ type: 'out', text: s[lang] + ': ' + s.items.join(', ') }));
     } else if (low === 'cat experience.log') {
       out.push({ type: 'out', text: lang === 'es'
-        ? '2017–2025 · Operaciones 24/7 · 2025– · Soporte IT (Cartronic / Prosegur Activa)'
-        : '2017–2025 · 24/7 operations · 2025– · IT Support (Cartronic / Prosegur Activa)' });
+        ? '2017–2025 · Operaciones 24/7 · 2025–2026 · Soporte IT y SAP (Prosegur Activa / Cartronic) · 2026– · Sistemas y Ciberseguridad (sector Defensa)'
+        : '2017–2025 · 24/7 operations · 2025–2026 · IT Support & SAP (Prosegur Activa / Cartronic) · 2026– · Systems & Cybersecurity (Defence sector)' });
     } else if (low === 'contact') {
       out.push({ type: 'out', text: CONTACT.email + ' · ' + CONTACT.phoneDisplay });
       out.push({ type: 'out', text: CONTACT.github + ' · ' + CONTACT.linkedin });

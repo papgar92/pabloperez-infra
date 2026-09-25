@@ -26,8 +26,8 @@ export default function ActionBar({ lang }) {
             <span className="whitespace-nowrap">{T[lang].save}</span>
           </button>
 
-          {/* Agendar */}
-          <a
+          {/* Agendar (solo si hay enlace) */}
+          {CONTACT.cal && <a
             href={CONTACT.cal}
             target="_blank"
             rel="noopener noreferrer"
@@ -35,7 +35,7 @@ export default function ActionBar({ lang }) {
           >
             <Icon d="M8 2v4 M16 2v4 M3 10h18 M5 4h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z" />
             <span className="hidden sm:inline whitespace-nowrap">{T[lang].schedule}</span>
-          </a>
+          </a>}
 
           {/* Iconos */}
           <a href={CONTACT.github} target="_blank" rel="noopener noreferrer"

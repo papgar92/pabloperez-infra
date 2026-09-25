@@ -1,6 +1,6 @@
 # Pablo Pérez García · Portfolio de Infraestructura / Sistemas
 
-Portfolio web interactivo donde presento mi perfil como **Administrador de Sistemas / Soporte IT**: Active Directory, virtualización, redes, monitorización y automatización.
+Portfolio web interactivo donde presento mi perfil como **Administrador de Sistemas y Ciberseguridad**: Microsoft 365, Active Directory / Entra ID, virtualización con Proxmox, redes, documentación como código y automatización.
 
 🔗 **Verlo en producción:** https://pabloperez-infra.vercel.app
 
