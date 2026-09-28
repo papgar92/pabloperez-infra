@@ -13,9 +13,6 @@ export const CONTACT = {
   linkedin: 'https://linkedin.com/in/ppg92',
   cal: '', // 'https://cal.com/papgar92' — desactivado: sin búsqueda activa
   web: 'https://pabloperez-infra.vercel.app/',
-
-  cvES: '/CV-PPG-IT-ES.pdf',
-  cvEN: '/CV-PPG-IT-EN.pdf',
 };
 
 // Panel de estado de sistemas (equivalente al feed de alertas del SOC).
@@ -169,7 +166,6 @@ export const T = {
     ],
     save: 'Guardar contacto',
     schedule: 'Agendar',
-    cv: 'CV',
     statusReady: 'todos los sistemas operativos',
   },
   en: {
@@ -215,7 +211,6 @@ export const T = {
     ],
     save: 'Save contact',
     schedule: 'Schedule',
-    cv: 'CV',
     statusReady: 'all systems operational',
   },
 };

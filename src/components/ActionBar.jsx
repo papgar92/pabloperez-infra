@@ -10,8 +10,6 @@ function Icon({ d }) {
 }
 
 export default function ActionBar({ lang }) {
-  const cv = lang === 'es' ? CONTACT.cvES : CONTACT.cvEN;
-
   return (
     <div className="fixed bottom-0 left-0 right-0 z-50">
       <div className="mx-auto max-w-3xl px-3 pb-3">
@@ -47,11 +45,6 @@ export default function ActionBar({ lang }) {
              aria-label="LinkedIn"
              className="flex items-center justify-center rounded-lg border border-line p-2.5 text-ink-dim hover:text-ink hover:border-ink-mute transition-colors">
             <Icon d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z M2 9h4v12H2z M4 2a2 2 0 1 0 0 4 2 2 0 0 0 0-4z" />
-          </a>
-          <a href={cv} target="_blank" rel="noopener noreferrer"
-             aria-label="CV"
-             className="flex items-center justify-center rounded-lg border border-line px-3.5 py-2.5 text-ink-dim text-[13px] font-semibold mono hover:text-ink hover:border-ink-mute transition-colors">
-            CV
           </a>
         </div>
       </div>
