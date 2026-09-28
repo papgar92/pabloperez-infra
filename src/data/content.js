@@ -141,7 +141,7 @@ export const T = {
     expItems: [
       {
         role: 'Administrador de Sistemas y Ciberseguridad',
-        org: 'Sector Defensa · empresa confidencial',
+        org: 'Empresa confidencial · sector Defensa',
         period: '2026 – act.',
         desc: 'Infraestructura IT de tres sedes con CPD propio y administración del tenant de Microsoft 365: Active Directory, Entra ID, Proxmox VE/PBS, MikroTik y puesto de trabajo. Documentación completa como código, análisis de riesgos orientado al ENS y diseño del acceso auditado de terceros y de la estrategia de copias.',
       },
@@ -186,7 +186,7 @@ export const T = {
     expItems: [
       {
         role: 'Systems & Cybersecurity Administrator',
-        org: 'Defence sector · confidential company',
+        org: 'Confidential company · Defence sector',
         period: '2026 – now',
         desc: 'IT infrastructure across three sites with their own data rooms, plus Microsoft 365 tenant administration: Active Directory, Entra ID, Proxmox VE/PBS, MikroTik and endpoints. Full documentation as code, ENS-oriented risk analysis and design of audited third-party access and the backup strategy.',
       },

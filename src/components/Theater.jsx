@@ -60,7 +60,7 @@ const SEQ = {
         ['Behind every system that works without anyone noticing, there is someone who brings it up, watches it and fixes it before it breaks.', true],
       ],
       tag: 'uptime · the invisible work that keeps a company running',
-      closing: 'If a sysadmin does their job well, it seems like he is not doing anything at all',
+      closing: 'If a sysadmin does their job well, it seems like they are not doing anything at all',
       sign: '— Pablo Pérez García · Systems & Cybersecurity Administrator',
       cta: 'Enter the system ▸',
     },
