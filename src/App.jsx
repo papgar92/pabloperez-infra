@@ -9,8 +9,8 @@ import ActionBar from './components/ActionBar.jsx';
 import Typewriter from './components/Typewriter.jsx';
 
 const PHRASES = {
-  es: ['¿necesitas un sysadmin?', '¿hablamos?', 'disponible · Madrid', 'que las cosas simplemente funcionen', 'uptime: tu tranquilidad'],
-  en: ['need a sysadmin?', 'shall we talk?', 'available · Madrid', 'making things just work', 'uptime: your peace of mind'],
+  es: ['que las cosas simplemente funcionen', 'documentar primero, cambiar después', 'seguridad desde el diseño', 'uptime: tu tranquilidad', 'Madrid'],
+  en: ['making things just work', 'document first, change later', 'security by design', 'uptime: your peace of mind', 'Madrid'],
 };
 
 const MONTHS = {
