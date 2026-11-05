@@ -21,9 +21,9 @@ export const STATUS = [
   {
     id: 'SYS-AD', sev: 'up',
     es: { title: 'Active Directory · Entra ID', src: 'multisede · GPOs, DNS, DHCP', state: 'OPERATIVO',
-          detail: 'Dominio on-premise e identidad en la nube para una organización con tres sedes: usuarios, grupos, GPOs, DNS y DHCP, con auditoría periódica de cuentas y equipos.' },
+          detail: 'Dominio on-premise e identidad híbrida con Entra ID para una organización con tres sedes: usuarios, grupos, GPOs, DNS y DHCP. Bastionado de los grupos privilegiados, unión de equipos delegada y pilotos de Windows LAPS y BitLocker con la clave custodiada en Entra ID.' },
     en: { title: 'Active Directory · Entra ID', src: 'multi-site · GPOs, DNS, DHCP', state: 'OPERATIONAL',
-          detail: 'On-premise domain and cloud identity for a three-site organization: users, groups, GPOs, DNS and DHCP, with regular audits of accounts and computers.' },
+          detail: 'On-premise domain and hybrid identity with Entra ID for a three-site organization: users, groups, GPOs, DNS and DHCP. Hardening of privileged groups, delegated domain join and pilots of Windows LAPS and BitLocker with keys escrowed in Entra ID.' },
   },
   {
     id: 'SYS-M365', sev: 'up',
@@ -35,9 +35,9 @@ export const STATUS = [
   {
     id: 'SYS-VIRT', sev: 'up',
     es: { title: 'Virtualización · Proxmox VE / PBS', src: 'VMs, contenedores y copias', state: 'OPERATIVO',
-          detail: 'Plataforma virtualizada con copia diaria verificada en Proxmox Backup Server y servicios migrados desde Hyper-V. Experiencia previa con VMware, Docker y LXC.' },
+          detail: 'Plataforma virtualizada con copia diaria verificada en Proxmox Backup Server y servicios migrados desde Hyper-V. Copia cifrada del ERP en un NAS aislado, con restauraciones de prueba periódicas. Experiencia previa con VMware y LXC.' },
     en: { title: 'Virtualization · Proxmox VE / PBS', src: 'VMs, containers & backups', state: 'OPERATIONAL',
-          detail: 'Virtualized platform with verified daily backups to Proxmox Backup Server and services migrated from Hyper-V. Previous experience with VMware, Docker and LXC.' },
+          detail: 'Virtualized platform with verified daily backups to Proxmox Backup Server and services migrated from Hyper-V. Encrypted ERP backups on an isolated NAS, with regular test restores. Previous experience with VMware and LXC.' },
   },
   {
     id: 'SYS-NET', sev: 'guard',
@@ -55,10 +55,10 @@ export const STATUS = [
   },
   {
     id: 'SYS-MON', sev: 'watch',
-    es: { title: 'Monitorización · Nagios / Zabbix', src: 'disponibilidad y alertas', state: 'MONITORIZANDO',
-          detail: 'Supervisión de servidores, servicios y dispositivos de red. Alertas proactivas para anticipar caídas antes de que afecten al usuario.' },
-    en: { title: 'Monitoring · Nagios / Zabbix', src: 'availability & alerts', state: 'WATCHING',
-          detail: 'Monitoring of servers, services and network devices. Proactive alerts to anticipate outages before they reach the user.' },
+    es: { title: 'Monitorización · Uptime Kuma / LibreNMS', src: 'disponibilidad, hardware y alertas', state: 'MONITORIZANDO',
+          detail: 'Monitorización puesta en marcha desde cero sobre un servidor Linux cifrado y bastionado: disponibilidad de servicios y estado del hardware por SNMPv3 (discos, RAID, controladoras). Alertas de hipervisor, NAS y monitorización centralizadas por correo y Teams vía Microsoft Graph. Experiencia previa con Nagios y Zabbix.' },
+    en: { title: 'Monitoring · Uptime Kuma / LibreNMS', src: 'availability, hardware & alerts', state: 'WATCHING',
+          detail: 'Monitoring built from scratch on an encrypted, hardened Linux server: service availability and hardware health over SNMPv3 (disks, RAID, controllers). Hypervisor, NAS and monitoring alerts centralized to email and Teams via Microsoft Graph. Previous experience with Nagios and Zabbix.' },
   },
 ];
 
@@ -105,12 +105,12 @@ export const PROJECTS = [
 ];
 
 export const SKILLS = [
-  { es: 'Microsoft', en: 'Microsoft', items: ['Active Directory', 'GPOs', 'Windows Server', 'M365', 'Entra ID', 'Exchange Online', 'Defender', 'Intune'] },
+  { es: 'Microsoft', en: 'Microsoft', items: ['Active Directory', 'GPOs', 'Windows Server', 'M365', 'Entra ID', 'Entra Connect', 'Windows LAPS', 'BitLocker', 'Exchange Online', 'Defender', 'Microsoft Graph', 'Intune'] },
   { es: 'Sistemas operativos', en: 'Operating systems', items: ['Debian', 'Ubuntu', 'SUSE'] },
-  { es: 'Virtualización', en: 'Virtualization', items: ['Proxmox VE', 'Proxmox Backup Server', 'VMware', 'LXC', 'Docker'] },
+  { es: 'Virtualización', en: 'Virtualization', items: ['Proxmox VE', 'Proxmox Backup Server', 'VMware', 'LXC', 'Docker', 'Caddy'] },
   { es: 'Redes / Perímetro', en: 'Networking / Perimeter', items: ['MikroTik', 'WireGuard', 'WatchGuard', 'pfSense', 'VLANs', 'VPN'] },
-  { es: 'Almacenamiento / ERP', en: 'Storage / ERP', items: ['TrueNAS', 'SAP Business One', 'SQL Server'] },
-  { es: 'Monitorización', en: 'Monitoring', items: ['Nagios', 'Zabbix', 'Grafana'] },
+  { es: 'Almacenamiento / ERP', en: 'Storage / ERP', items: ['TrueNAS', 'QNAP', 'SAP Business One', 'SQL Server'] },
+  { es: 'Monitorización', en: 'Monitoring', items: ['Uptime Kuma', 'LibreNMS', 'SNMPv3', 'Nagios', 'Zabbix', 'Grafana'] },
   { es: 'Scripting / Automatización', en: 'Scripting / Automation', items: ['PowerShell', 'Bash', 'Git'] },
   { es: 'ITSM / Soporte', en: 'ITSM / Support', items: ['Helix ITSM', 'JIRA', 'Salesforce'] },
 ];
@@ -143,7 +143,7 @@ export const T = {
         role: 'Administrador de Sistemas y Ciberseguridad',
         org: 'Empresa confidencial · sector Defensa',
         period: '2026 – act.',
-        desc: 'Infraestructura IT de tres sedes con CPD propio y administración del tenant de Microsoft 365: Active Directory, Entra ID, Proxmox VE/PBS, MikroTik y puesto de trabajo. Documentación completa como código, análisis de riesgos orientado al ENS y diseño del acceso auditado de terceros y de la estrategia de copias.',
+        desc: 'Infraestructura IT de tres sedes con CPD propio y administración del tenant de Microsoft 365: Active Directory, Entra ID, Proxmox VE/PBS, MikroTik y puesto de trabajo. Monitorización y SIEM puestos en marcha desde cero, bastionado de Active Directory, copia cifrada del ERP con restauración verificada y ciclo de vida de cuentas automatizado. Documentación completa como código (runbooks y ADR), análisis de riesgos orientado al ENS y casos de negocio para Dirección.',
       },
       {
         role: 'Técnico de Soporte IT & Desarrollo SAP B1/HANA',
@@ -188,7 +188,7 @@ export const T = {
         role: 'Systems & Cybersecurity Administrator',
         org: 'Confidential company · Defence sector',
         period: '2026 – now',
-        desc: 'IT infrastructure across three sites with their own data rooms, plus Microsoft 365 tenant administration: Active Directory, Entra ID, Proxmox VE/PBS, MikroTik and endpoints. Full documentation as code, ENS-oriented risk analysis and design of audited third-party access and the backup strategy.',
+        desc: 'IT infrastructure across three sites with their own data rooms, plus Microsoft 365 tenant administration: Active Directory, Entra ID, Proxmox VE/PBS, MikroTik and endpoints. Monitoring and SIEM built from scratch, Active Directory hardening, encrypted ERP backups with verified restores and automated account lifecycle. Full documentation as code (runbooks and ADRs), ENS-oriented risk analysis and business cases for management.',
       },
       {
         role: 'IT Support Technician & SAP B1/HANA Developer',
