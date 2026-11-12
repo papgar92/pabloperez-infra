@@ -21,9 +21,9 @@ export const STATUS = [
   {
     id: 'SYS-AD', sev: 'up',
     es: { title: 'Active Directory · Entra ID', src: 'multisede · GPOs, DNS, DHCP', state: 'OPERATIVO',
-          detail: 'Dominio on-premise e identidad híbrida con Entra ID para una organización con tres sedes: usuarios, grupos, GPOs, DNS y DHCP. Bastionado de los grupos privilegiados, unión de equipos delegada y pilotos de Windows LAPS y BitLocker con la clave custodiada en Entra ID.' },
+          detail: 'Dominio on-premise e identidad híbrida con Entra ID para una organización con tres sedes: usuarios, grupos, GPOs, DNS y DHCP. Bastionado de los grupos privilegiados con auditoría periódica (PingCastle), unión de equipos delegada y pilotos de Windows LAPS y BitLocker con la clave custodiada en Entra ID.' },
     en: { title: 'Active Directory · Entra ID', src: 'multi-site · GPOs, DNS, DHCP', state: 'OPERATIONAL',
-          detail: 'On-premise domain and hybrid identity with Entra ID for a three-site organization: users, groups, GPOs, DNS and DHCP. Hardening of privileged groups, delegated domain join and pilots of Windows LAPS and BitLocker with keys escrowed in Entra ID.' },
+          detail: 'On-premise domain and hybrid identity with Entra ID for a three-site organization: users, groups, GPOs, DNS and DHCP. Hardening of privileged groups with periodic audits (PingCastle), delegated domain join and pilots of Windows LAPS and BitLocker with keys escrowed in Entra ID.' },
   },
   {
     id: 'SYS-M365', sev: 'up',
